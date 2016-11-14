@@ -1,0 +1,19 @@
+@import 'modules/mixines';
+
+.up {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: url('../img/up.png') no-repeat;
+  width: 44px;
+  height: 45px;
+  z-index: 1500;
+  display: none;
+
+  &--active {
+    display: block;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

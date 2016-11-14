@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/temporarily.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+  <script src="js/jquery.inputmask.js" type="text/javascript"></script>
+  <script src="js/jquery.inputmask.extensions.js" type="text/javascript"></script>
+  <script src="js/jquery.inputmask.date.extensions.js" type="text/javascript"></script>
+  <script src="js/jquery.inputmask.numeric.extensions.js" type="text/javascript"></script>
+  <script src="js/jquery.inputmask.custom.extensions.js" type="text/javascript"></script>
+
+  <script src="js/parallax.js" type="text/javascript"></script>
+
+  <title>Medic</title>
+</head>
+<body>
+
+    <div class="up"></div>
+
+    <div class="main-header-loader">
+
+      <div class="main-header-loader-wrapper">
+        <div class="loader">
+          <div></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <filter id="goo">
+              <fegaussianblur in="SourceGraphic" stddeviation="15" result="blur"></fegaussianblur>
+              <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -7" result="goo"></fecolormatrix>
+              <feblend in="SourceGraphic" in2="goo"></feblend>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+
+    </div><!-- /loader-->
+
+  <div class="success">
+    <div class="success-wrapper">
+      <p class="success-description">
+        Ваша заявка принята. С вами свяжутся в ближайшее время в часы работы госпиталя с 09:00 до 21:00
+      </p>
+    </div>
+  </div>
+
+  <div class="main-popup-background"></div>
+
+    <div class="main-popup">
+        <div class="main-popup-wrapper">
+            <form class="main-form" action="contact-form-handler.php" method="post">
+              <h3 class="title">Записаться на приём</h3>
+              <input type="text" name="name" class="js-name" placeholder="Имя">
+              <input type="text" name="name" class="js-number" placeholder="Телефон">
+              <button class="">
+                <span>Записаться</span>
+              </button>
+            </form>
+        </div>
+    </div>
+
+
+  <header class="main-header">
+
+    <header class="site-header">
+
+      <div class="wrapper">
+
+        <div class="main-header-logo"></div>
+
+        <div class="main-header-location">
+          <a href="tel:+7(495)234-42-42" class="number phone-num">+7 (495) 234-42-42</a>
+          <div class="address">г. Москва, м. Римская, Волочаевская ул. 15 к. 1</div>
+          <div class="buttons">
+            <button class="button button_liteBlue js-call">
+              <span>Перезвоните мне</span>
+            </button>
+            <button class="button button_blue js-button">
+              <span>Записаться на прием</span>
+            </button>
+          </div>
+
+          <div class='main-header-switch'>
+            <div class='menu'></div>
+          </div>
+
+        </div>
+
+      </div><!-- /wrapper -->
+
+      <div class="wrapper wrapper--zIndex">
+        <div class="main-header-menu">
+          <ul class="list">
+            <li class="list-item"><a class="list-item-link" href="#mrt">Что такое МРТ</a></li>
+            <li class="list-item"><a class="list-item-link" href="#why-dont">Показания</a></li>
+            <li class="list-item"><a class="list-item-link" href="#why-dont--mrt">Противопоказания</a></li>
+            <li class="list-item"><a class="list-item-link" href="#about-med">Госпиталь</a></li>
+            <li class="list-item"><a class="list-item-link" href="#machine">Оборудование</a></li>
+            <li class="list-item"><a class="list-item-link" href="#doctors">Специалисты</a></li>
+            <li class="list-item"><a class="list-item-link" href="#cost">Цены</a></li>
+            <li class="list-item"><a class="list-item-link" href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
+      </div><!-- /wrapper-->
+
+    </header><!-- /site-header -->
+
+    <div class="wrapper">
+
+      <div class="main-header-description">
+        <h1 class="main-header-title">Высокоточное МРТ головного мозга</h1>
+        <p class="main-header-content">После обработки результатов МРТ головного мозга врачи могут получить двух- или трехмерное изображение любого интересующего их участка мозга и увидеть сосудистые изменения, воспалительные заболевания, демиелинизирующие заболевания, дистрофические изменения</p>
+        <button class="main-header-button js-button">
+          <span>Записаться на прием</span>
+        </button>
+      </div>
+
+    </div>
+
+  </header><!-- /main-header -->
+
+  <div id="mrt" class="mrt">
+    <div class="wrapper">
+      <div class="mrt-wrapper">
+        <h2 class="mrt-title">Что такое МРТ</h2>
+        <p class="mrt-description">
+          Магнитно-резонансная томография — это современное диагностическое исследование, которое позволяет врачам «видеть» внутренности тела для того, чтобы определить труднодиагностируемые заболевания или отклонения в работе органов. На сегодняшний день МРТ является самым безопасным исследованием частей тела и внутренних органов.
+        </p>
+        <p class="mrt-info">
+          <img src="img/radiation.png" alt="">
+          Вся процедура происходит без облучения
+        </p>
+
+        <div class="mrt-item">
+          <div class="mrt-item-img">
+            <img src="img/about_icon_1.png" alt="">
+          </div>
+          <h3 class="mrt-item-title">Процедура длится <br>не более 30 минут</h3>
+          <p class="mrt-item-description">
+
+            Среднее время проведения
+            процедуры магнитно-резонансной
+            томографии составляет около
+            тридцати минут
+          </p>
+        </div>
+
+        <div class="mrt-item">
+          <div class="mrt-item-img">
+            <img src="img/about_icon_2.png" alt="">
+          </div>
+          <h3 class="mrt-item-title">Оборудование экспертного класса</h3>
+          <p class="mrt-item-description">
+            Philips Ingenia 1.5T — лучший
+            в своем классе по качеству
+            изображений и скорости сканирования
+          </p>
+        </div>
+
+        <div class="mrt-item">
+          <div class="mrt-item-img">
+            <img src="img/about_icon_3.png" alt="">
+          </div>
+          <h3 class="mrt-item-title">Контрастное вещество</h3>
+          <p class="mrt-item-description">Возможно проведение МРТ с использованием контрастного вещества, что повышает информативность исследования
+          </p>
+        </div>
+
+        <div class="mrt-item">
+          <div class="mrt-item-img">
+            <img src="img/about_icon_4.png" alt="">
+          </div>
+          <h3 class="mrt-item-title">Сохраняем на диск или флешку</h3>
+          <p class="mrt-item-description">После завершения процедуры врач проводит расшифровку данных, записывая их на диск или флешку
+          </p>
+        </div>
+      </div>
+    </div>
+  </div><!-- /mrt-->
+
+  <div class="parallax">
+      <div id="why-dont" class="why-dont">
+
+    <div class="wrapper">
+
+      <h2 class="title">Показания к проведению МРТ головного мозга</h2>
+
+      <div class="why-dont-item">
+        <div class="circle"></div>
+        <p class="description">Головокружения и головные боли, мигрень</p>
+      </div><!-- /why-dont-item-->
+
+      <div class="why-dont-item">
+        <div class="circle"></div>
+        <p class="description">Инсульт</p>
+      </div><!-- /why-dont-item-->
+
+      <div class="why-dont-item">
+        <div class="circle"></div>
+        <p class="description">Травмы головы и шейной области, сотрясение мозга</p>
+      </div><!-- /why-dont-item-->
+
+      <div class="why-dont-item">
+        <div class="circle"></div>
+        <p class="description">Ишемическая болезнь</p>
+      </div><!-- /why-dont-item-->
+
+      <div class="why-dont-item">
+        <div class="circle"></div>
+        <p class="description">Нарушения зрения или слуха, шум в ушах</p>
+      </div><!-- /why-dont-item-->
+
+      <div class="why-dont-item">
+        <div class="circle"></div>
+        <p class="description">Вегетососудистая дистония</p>
+      </div><!-- /why-dont-item-->
+
+      <div class="why-dont-item">
+        <div class="circle"></div>
+        <p class="description">Нарушения речи, памяти, интеллекта</p>
+      </div><!-- /why-dont-item-->
+
+      <div class="why-dont-item">
+        <div class="circle"></div>
+        <p class="description">Деформации сосудов головного мозга</p>
+      </div><!-- /why-dont-item-->
+
+      <div class="why-dont-item">
+        <div class="circle"></div>
+        <p class="description">Регулярные носовые кровотечения</p>
+      </div><!-- /why-dont-item-->
+
+      <div class="why-dont-item">
+        <div class="circle"></div>
+        <p class="description">Болезнь Паркинсона</p>
+      </div><!-- /why-dont-item-->
+
+      <div class="why-dont-item">
+        <div class="circle"></div>
+        <p class="description">
+          Подозрение на опухоль мозга или ее наличие,
+          а также подозрение на другие заболевания мозга</p>
+      </div><!-- /why-dont-item-->
+
+      <div class="why-dont-item">
+        <div class="circle"></div>
+        <p class="description">Обмороки</p>
+      </div><!-- /why-dont-item-->
+
+    </div><!-- /wrapper-->
+
+  </div><!-- /why-dont-->
+
+  <div id="why-dont--mrt" class="why-dont why-dont--mrt">
+
+    <div class="wrapper">
+
+      <h2 class="title">Противопоказания к МРТ</h2>
+
+      <p class="description">Противопоказания можно разделить на две группы: абсолютные и относительные.</p>
+      <p class="description">При абсолютных противопоказаниях исследование при помощи МРТ недопустимо.</p>
+      <p class="description">При относительных противопоказаниях исследование возможно при определенных условиях.</p>
+
+      <div class="why-dont-advantages">
+
+        <div class="left">
+
+          <div class="name">Относительные противопоказания</div>
+
+          <div class="why-dont-item">
+            <div class="circle"></div>
+            <p class="description">Беременность</p>
+          </div><!-- /why-dont-item-->
+
+          <div class="why-dont-item">
+            <div class="circle"></div>
+            <p class="description">Суставные протезы</p>
+          </div><!-- /why-dont-item-->
+
+          <div class="why-dont-item">
+            <div class="circle"></div>
+            <p class="description">Инсутиловый насос</p>
+          </div><!-- /why-dont-item-->
+
+          <div class="why-dont-item">
+            <div class="circle"></div>
+            <p class="description">Искусственный сердечный клапан</p>
+          </div><!-- /why-dont-item-->
+
+          <div class="why-dont-item">
+            <div class="circle"></div>
+            <p class="description">Клаустрофобия, приступы панических атак</p>
+          </div><!-- /why-dont-item-->
+
+          <div class="why-dont-item">
+            <div class="circle"></div>
+            <p class="description">Невозможность сохранять неподвижное положение</p>
+          </div><!-- /why-dont-item-->
+
+          <div class="why-dont-item">
+            <div class="circle"></div>
+            <p class="description">Привитые электронные приборы (нейростимуляторы)</p>
+          </div><!-- /why-dont-item-->
+
+        </div>
+
+        <div class="right">
+
+          <div class="name">Абсолютные противопоказания</div>
+
+          <div class="why-dont-item">
+            <div class="circle"></div>
+            <p class="description">Беременность, I триместр</p>
+          </div><!-- /why-dont-item-->
+
+          <div class="why-dont-item">
+            <div class="circle"></div>
+            <p class="description">Наличие кардиостимулятора</p>
+          </div><!-- /why-dont-item-->
+
+          <div class="why-dont-item">
+            <div class="circle"></div>
+            <p class="description">Наличие имплантатов среднего уха</p>
+          </div><!-- /why-dont-item-->
+
+          <div class="why-dont-item">
+            <div class="circle"></div>
+            <p class="description">Наличие металлических инородных тел (осколки, <br>стружка и т.д)</p>
+          </div><!-- /why-dont-item-->
+
+          <div class="why-dont-item">
+            <div class="circle"></div>
+            <p class="description">Наличие металлических клипс/зажимов на сосудах <br> головного мозга</p>
+          </div><!-- /why-dont-item-->
+
+        </div><!-- /right -->
+
+      </div><!-- /why-dont-advantages -->
+
+    </div><!-- /wrapper -->
+
+  </div><!-- /why-dont-->
+  </div>
+
+  <div id="about-med" class="about-med">
+
+    <div class="wrapper">
+      <h3 class="about-med-title">Госпиталь</h3>
+      <p class="about-med-description">В основе работы нашего госпиталя лежит неразрывная связь между лечебной деятельностью,
+      научными исследованиями и непрерывным профессионально-образовательным процессом. Именно это позволяет оказывать нашим пациентам
+      максимально эффективную медицинскую помощь </p>
+
+      <div class="about-med-content">
+
+        <img src="img/photos_icon.png" alt="">
+
+        <div class="content">
+          <div class="title">Моноцентр</div>
+          <div class="description">
+           Мы создали центр, в котором Вы можете посетить любого специалиста, пройти любое медицинское обследование и даже получить хирургическую помощь, не выходя из здания</div>
+        </div>
+
+      </div><!-- /about-content -->
+
+      <div class="quote">
+
+        <p class="quote-content">
+          «Мы создали уникальный медицинский
+          комплекс, в котором развитие лучших
+          традиций медицинской науки и практики,
+          использование инновационных технологий
+          и передового оборудования в соответсвии
+          с высокими международными стандартами
+          сочетаются с заботой и индивидуальным
+          подходом к каждому пациенту.»
+        </p>
+
+        <div class="quote-profile">
+          <div class="quote-profile-img"></div>
+          <div class="quote-profile-info">
+            <p class="name">Яков Марголин</p>
+            <p class="status">
+              Генеральный директор
+              Клинического госпиталя на Яузе
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-med-items">
+        <p class="content">На фото: Главное здание Клинического госпиталя на Яузе</p>
+
+        <div class="content-wrapper">
+          <div class="item item--active">
+            <img src="../img/photo_1.png" alt="">
+          </div>
+
+          <div class="item">
+            <img src="../img/photo_2.png" alt="">
+          </div>
+
+          <div class="item">
+            <img src="../img/photo_3.png" alt="">
+          </div>
+
+          <div class="item">
+            <img src="../img/photo_4.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /about-med -->
+
+  <div id="machine" class="machine">
+
+    <div class="wrapper">
+
+      <div class="machine-content">
+
+        <h3 class="title">Оборудование</h3>
+        <p class="description">
+          Магнитно-резонансный томограф <b>Philips Ingenia 1,5T</b>, созданный на основе революционной архитектуры, стал первым
+          МР-томографом, в котором оцифровка МР-сигнала выполняется непосредственно в радиочастотной катушке, то есть
+          максимально близко к пациенту. Более высокое и стабильное качество изображений во всех областях применения системы
+          сочетается с клинической универсальностью, что позволяет расширить область применения МРТ и использовать этот
+          томограф в таких областях, как онкология и МРТ всего тела
+        </p>
+        <div class="image"></div>
+
+      </div><!-- /machine-content -->
+
+      <div class="machine-about">
+
+        <div class="brend">
+          <img src="img/philips.png" alt="">
+          <h4 class="name">Оборудование Philips Ingenia 1.5T</h4>
+          <p class="description">
+            Система  разрабатывалась для пациентов самого разного возраста, телосложения и физического состояния,
+            потому обеспечивает комфорт для любого пациента
+            </p>
+        </div><!-- /brend -->
+
+        <div class="photos">
+          <h4 class="name">Фотографии</h4>
+
+          <div class="photos-items">
+
+            <div class="item item--active">
+              <img src="img/equipment_photo_1.png" alt="">
+            </div>
+            <div class="item">
+              <img src="img/equipment_photo_2.png" alt="">
+            </div>
+            <div class="item">
+              <img src="img/equipment_photo_3.png" alt="">
+            </div>
+
+          </div><!-- /photos-items -->
+
+        </div>
+
+      </div><!-- /machine-about -->
+
+    </div><!-- /wrapper-->
+
+  </div><!-- /machine-->
+
+  <div id="doctors" class="doctors">
+
+    <div class="wrapper">
+      <h2 class="doctors-title">Наши специалисты</h2>
+      <p class="doctors-description">Противопоказания можно разделить на две группы: абсолютные и относительные.</p>
+      <p class="doctors-description">При абсолютных противопоказаниях исследование при помощи МРТ недопустимо.</p>
+      <div class="doctors-description">При относительных противопоказаниях исследование возможно при определенных условиях.</div>
+
+      <div class="doctors-items">
+
+        <div class="item">
+          <img src="img/doctor_1.png" alt="">
+          <div class="name">Силин Антон Юрьевич</div>
+          <p class="who-is">
+            Заведующий отделением
+            лучевой диагностики
+            Клинического госпиталя<br>на Яузе</p>
+        </div>
+
+        <div class="item">
+          <img src="img/doctor_4.png" alt="">
+          <div class="name">Мещеряков Андрей Иванович</div>
+          <p class="who-is">Рентгенолог второй квалификационной категории Клинического госпиталя<br>на Яузе</p>
+        </div>
+
+        <div class="item">
+          <img src="img/doctor_3.png" alt="">
+          <div class="name">Соколов Константин Владимирович</div>
+          <p class="who-is">
+            Рентгенолог Клинического центрана Яузе <br><i>Кандидат медицинских наук</i>
+          </p>
+        </div>
+
+        <div class="item">
+          <img src="img/doctor_2.png" alt="">
+          <div class="name">Петрова Марина Александровна</div>
+          <p class="who-is">
+            Рентгенолог Клинического госпиталя на Яузе
+          </p>
+        </div>
+
+        <div class="item">
+          <img src="img/doctor_5.png" alt="">
+          <div class="name">Василенко Евгений Геннадиевич</div>
+          <p class="who-is">Рентгенолог Клинического госпиталя на Яузе
+          </p>
+        </div>
+
+        <div class="item">
+          <img src="img/doctor_6.png" alt="">
+          <div class="name">Вилков Сергей Анатольевич</div>
+          <p class="who-is">
+            Рентгенолог Клинического госпиталя на Яузе
+          </p>
+        </div>
+
+      </div>
+    </div><!-- /wrapper -->
+
+  </div><!-- /doctors-->
+
+  <div id="cost" class="cost">
+
+    <div class="wrapper">
+
+      <h2 class="cost-title">Стоимость услуг</h2>
+      <p class="cost-description">
+        Здесь разговор идет об услугах МЕДцентра. При абсолютных противопоказаниях исследование при помощи МРТ недопустимо. При относительных противопоказаниях исследование возможно при определенных условиях
+      </p>
+
+      <div class="cost-wrapper">
+
+        <div class="cost-items">
+
+          <div class="item">
+            <p class="item-description">МРТ головного мозга</p>
+            <div class="item-prize">
+              5700
+            </div>
+          </div>
+
+          <div class="item">
+            <p class="item-description">
+              МРТ головного мозга с бесконтрастной ангиографией
+              артерий головного мозга
+            </p>
+            <div class="item-prize">
+              7500
+            </div>
+          </div>
+
+          <div class="item">
+            <p class="item-description">
+              МРТ головного мозга с бесконтрастной ангиографией
+              артерий, вен и синусов головного мозга
+            </p>
+            <div class="item-prize">
+              7900
+            </div>
+          </div>
+
+          <div class="item">
+            <p class="item-description">
+              МРТ головного мозга с трактографией
+            </p>
+            <div class="item-prize">
+              12 900
+            </div>
+          </div>
+
+          <div class="item">
+            <p class="item-description">
+              МРТ головного мозга с прицельным исследованием гипофиза
+            </p>
+            <div class="item-prize">
+              5900
+            </div>
+          </div>
+
+          <div class="item">
+            <p class="item-description">
+              МРТ головного мозга с прицельным исследованием орбит
+            </p>
+            <div class="item-prize">
+              7900
+            </div>
+          </div>
+
+          <div class="item">
+            <p class="item-description">
+              МРТ высокого разрешения с прицельным
+              исследованием гиппокампов
+            </p>
+            <div class="item-prize">
+              7900
+            </div>
+          </div>
+
+          <div class="item">
+            <p class="item-description">
+              МРТ головного мозга при планировании
+              стереотаксической хирургии "Гамма-нож"
+            </p>
+            <div class="item-prize">
+              6700
+            </div>
+          </div>
+
+          <div class="item">
+            <p class="item-description">
+              МРТ головного мозга с прицельным исследованием
+              на нейроваскулярный конфликт
+            </p>
+            <div class="item-prize">
+              6700
+            </div>
+          </div>
+
+          <div class="item">
+            <p class="item-description">
+              МР-ангиография бесконтрастная сосудов головного
+              мозга (артерии, вены и синусы)
+            </p>
+            <div class="item-prize">
+              5900
+            </div>
+          </div>
+
+        </div>
+
+        <div class="cost-popup">
+          <form class="cost-form" action="contact-form-handler.php" method="post">
+            <h3 class="title">Записаться на приём</h3>
+            <input type="text" name="name" class="js-name" placeholder="Имя">
+            <input type="text" name="number" class="js-number" placeholder="Телефон">
+            <button class="">
+              <span>Записаться</span>
+            </button>
+          </form>
+        </div><!-- /cost-popup-->
+
+      </div>
+
+    </div><!-- /wrapper -->
+
+  </div><!-- /cost-->
+
+
+
+  <div id="contacts" class="contacts">
+
+    <div class="wrapper">
+      <div class="contacts-contant">
+        <h2 class="title">Контакты</h2>
+
+        <ul class="menu">
+          <li class="item">
+            <a class="item-link" href="">+7 (495) 125-04-15</a>
+          </li>
+          <li class="item">
+            <a class="item-link" href="">info@yamed.ru</a>
+          </li>
+        </ul>
+
+        <ul class="menu menu--next">
+          <li class="item">
+            Ежедневно с 9:00 до 21:00
+          </li>
+          <li class="item">
+            111033, г.Москва, Волочаевская ул. 15 к. 1
+          </li>
+        </ul>
+
+      </div>
+    </div><!-- /wrapper -->
+
+    <div id="map" class="map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=uaMbOa6YO527ld7k8eF-DFXRTYWIi_Zf&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+    </div>
+
+  </div><!-- /contacts -->
+
+
+  <script src="js/common.js"></script>
+</body>
+</html>
